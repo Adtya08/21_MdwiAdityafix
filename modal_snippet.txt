@@ -1,0 +1,46 @@
+
+<!-- MODAL DETAIL BERITA -->
+<div class="modal fade" id="modalDetailBerita" tabindex="-1" aria-labelledby="modalDetailLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content" style="border-radius:18px;border:none;overflow:hidden;">
+      <div class="modal-header" style="background:linear-gradient(135deg,#1e3a5f,#0f766e);border:none;padding:20px 24px;">
+        <h5 class="modal-title" id="modalDetailLabel" style="color:#fff;font-weight:700;font-size:1.1rem;"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="padding:24px;">
+        <div id="modalDetailDate" style="color:#64748b;font-size:0.85rem;margin-bottom:16px;"><i class="bi bi-calendar3 me-1"></i></div>
+        <div id="modalDetailImgWrapper" style="margin-bottom:20px;display:none;">
+          <img id="modalDetailImg" src="" alt="" style="width:100%;max-height:380px;object-fit:cover;border-radius:12px;">
+        </div>
+        <div id="modalDetailDesc" style="color:#374151;line-height:1.8;font-size:0.95rem;white-space:pre-line;"></div>
+      </div>
+      <div class="modal-footer" style="border:none;padding:16px 24px;">
+        <button type="button" class="btn" data-bs-dismiss="modal" style="background:#f1f5f9;color:#374151;border-radius:10px;font-size:0.88rem;padding:8px 20px;">
+          <i class="bi bi-x-circle me-1"></i>Tutup
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function showDetailBerita(btn) {
+  var judul = btn.getAttribute('data-judul');
+  var deskripsi = btn.getAttribute('data-deskripsi');
+  var tanggal = btn.getAttribute('data-tanggal');
+  var gambar = btn.getAttribute('data-gambar');
+  document.getElementById('modalDetailLabel').textContent = judul;
+  document.getElementById('modalDetailDate').innerHTML = '<i class="bi bi-calendar3 me-1"></i>' + tanggal;
+  document.getElementById('modalDetailDesc').textContent = deskripsi;
+  var imgWrapper = document.getElementById('modalDetailImgWrapper');
+  if (gambar && gambar.trim() !== '') {
+    document.getElementById('modalDetailImg').src = gambar;
+    document.getElementById('modalDetailImg').alt = judul;
+    imgWrapper.style.display = 'block';
+  } else {
+    imgWrapper.style.display = 'none';
+  }
+  var modal = new bootstrap.Modal(document.getElementById('modalDetailBerita'));
+  modal.show();
+}
+</script>

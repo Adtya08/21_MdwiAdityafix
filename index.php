@@ -9,6 +9,21 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
+    .brand-logo {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.brand-text span {
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
+.brand-text strong {
+  font-size: 1rem;
+  line-height: 1;
+}
     /* ===== HERO CAROUSEL - MODERN FRAME CARD ===== */
     .hero-carousel-wrapper {
       position: relative;
@@ -383,23 +398,51 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-smk navbar-expand-lg">
   <div class="container">
-    <a class="navbar-brand" href="index.php">
-      <div class="brand-icon">S1</div>
-      <div class="brand-text">
-        <span>SMK Negeri 1</span>
+    <a class="navbar-brand d-flex align-items-center" href="index.php">
+      
+      <!-- LOGO -->
+      <img src="assets/img/logo.png" alt="Logo Sekolah" class="brand-logo">
+
+      <!-- TEXT -->
+      <div class="brand-text ms-2">
+        <span class="d-block">SMK Negeri 1</span>
         <strong>Dlanggu</strong>
       </div>
+
     </a>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
       style="border-color:rgba(255,255,255,0.3);">
-      <span style="color:#fff; font-size:1.3rem;"><i class="bi bi-list"></i></span>
+      <span style="color:#fff; font-size:1.3rem;">
+        <i class="bi bi-list"></i>
+      </span>
     </button>
+
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
-        <li class="nav-item"><a class="nav-link active" href="#home"><i class="bi bi-house me-1"></i>Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#kegiatan"><i class="bi bi-calendar3 me-1"></i>Kegiatan</a></li>
-        <li class="nav-item"><a class="nav-link" href="#kontak"><i class="bi bi-telephone me-1"></i>Hubungi Kami</a></li>
-        <li class="nav-item ms-lg-2"><a class="nav-link nav-login-btn" href="login.php"><i class="bi bi-lock me-1"></i>Login</a></li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#home">
+            <i class="bi bi-house me-1"></i>Home
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#kegiatan">
+            <i class="bi bi-calendar3 me-1"></i>Kegiatan
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#kontak">
+            <i class="bi bi-telephone me-1"></i>Hubungi Kami
+          </a>
+        </li>
+
+        <li class="nav-item ms-lg-2">
+          <a class="nav-link nav-login-btn" href="login.php">
+            <i class="bi bi-lock me-1"></i>Login
+          </a>
+        </li>
       </ul>
     </div>
   </div>

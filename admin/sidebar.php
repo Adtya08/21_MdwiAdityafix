@@ -2,7 +2,7 @@
 <div class="admin-sidebar">
   <div class="sidebar-logo">
     <div class="d-flex align-items-center gap-2">
-      <div class="brand-icon">S1</div>
+      <img src="../assets/img/logo.png" alt="Logo" class="brand-icon">
       <div>
         <div style="color:rgba(255,255,255,0.6);font-size:0.68rem;text-transform:uppercase;letter-spacing:1px;">Admin Panel</div>
         <strong>SMKN 1 Dlanggu</strong>

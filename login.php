@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <div class="login-wrapper">
   <div class="login-box">
-    <div class="login-logo">S1</div>
+    <img src="assets/img/logo.png" alt="Logo" class="login-logo">
     <h2>Administrator</h2>
     <p class="sub">Masuk ke Panel Admin SMKN 1 Dlanggu</p>
 

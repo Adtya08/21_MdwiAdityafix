@@ -105,6 +105,10 @@ body {
   flex-shrink: 0;
   letter-spacing: -1px;
   animation: pulse-glow 3s infinite;
+  object-fit: contain;
+  padding: 6px;
+  border: 1.5px solid rgba(255,255,255,0.2);
+  box-shadow: 0 4px 12px rgba(26,58,92,0.15);
 }
 
 .brand-text { display: flex; flex-direction: column; line-height: 1.1; }
@@ -437,6 +441,10 @@ body {
   display: flex; align-items: center; justify-content: center;
   font-size: 2rem; font-weight: 800;
   color: #fff; margin: 0 auto 24px;
+  object-fit: contain;
+  padding: 8px;
+  border: 1.5px solid rgba(255,255,255,0.3);
+  box-shadow: 0 6px 20px rgba(26,58,92,0.20), inset 0 1px 0 rgba(255,255,255,0.3);
 }
 
 .login-box h2 {
@@ -486,7 +494,7 @@ body {
   margin-bottom: 16px;
 }
 
-.sidebar-logo .brand-icon { width: 40px; height: 40px; font-size: 1.1rem; animation: none; }
+.sidebar-logo .brand-icon { width: 40px; height: 40px; font-size: 1.1rem; animation: none; object-fit: contain; padding: 4px; border: 1.5px solid rgba(255,255,255,0.2); box-shadow: 0 3px 10px rgba(0,0,0,0.2); }
 .sidebar-logo strong { color: #fff; font-size: 0.92rem; display: block; margin-top: 4px; }
 
 .sidebar-nav a {
